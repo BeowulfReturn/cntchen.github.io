@@ -1849,8 +1849,7 @@
 <ul>
 <li>经纬度坐标（lng, lat）转瓦片坐标（tileX， tileY）:</li>
 </ul>
-<span>$tileX=\lfloor\frac{lng + 180}{360}\times{2^{Level}}\rfloor$</span><!-- Has MathJax -->
-<span>$tileY=\lfloor{(\frac{1}{2}-\frac{\ln(\tan(lat\times\pi/180)+\sec(lat\times\pi/180))}{2\times&pi;}})\times{2^{Level}}\rfloor$</span><!-- Has MathJax -->
+<p>$$tileX=\lfloor\frac{lng + 180}{360}\times{2^{Level}}\rfloor$$<br>$$tileY=\lfloor{(\frac{1}{2}-\frac{\ln(\tan(lat\times\pi/180)+\sec(lat\times\pi/180))}{2\timesπ}})\times{2^{Level}}\rfloor$$</p>
 <ul>
 <li>经纬度坐标（lng, lat）转像素坐标（pixelX, pixelY）</li>
 </ul>
@@ -3958,7 +3957,7 @@ top: 30%;
   });
 </script>
 
-<script type="text/javascript" src="">
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 <!-- End: Injected MathJax -->
 <!-- hexo-inject:end -->

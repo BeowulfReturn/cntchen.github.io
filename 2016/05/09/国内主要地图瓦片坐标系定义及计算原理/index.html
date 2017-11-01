@@ -93,7 +93,7 @@
 <meta property="og:image" content="http://cntchen.github.io/img/国内主要地图瓦片坐标系定义及计算原理/高德地图坐标转换图解.png">
 <meta property="og:image" content="http://cntchen.github.io/img/国内主要地图瓦片坐标系定义及计算原理/百度地图Level=2的瓦片坐标编号情况.jpg">
 <meta property="og:image" content="http://cntchen.github.io/img/国内主要地图瓦片坐标系定义及计算原理/百度地图坐标转换图解.png">
-<meta property="og:updated_time" content="2017-11-01T13:41:47.000Z">
+<meta property="og:updated_time" content="2017-11-01T14:27:49.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="国内主要地图瓦片坐标系定义及计算原理">
 <meta name="twitter:description" content="本文将介绍瓦片坐标相关知识，并提供高德地图、百度地图、谷歌地图的经纬度坐标与瓦片坐标的相互转换方法和类库。  背景互联网地图服务商的在线地图都通过瓦片的方式提供，称为瓦片地图服务。最常见的地图瓦片是图片格式的，现在有的地图服务商也提供了矢量的瓦片数据，然后在用户端使用Canvas渲染成图片，如node-canvas实现百度地图个性化底图绘制。在进行地图开发时，为获取特定经纬度所在区域的瓦片和获取">
@@ -352,8 +352,7 @@
 <ul>
 <li>经纬度坐标（lng, lat）转瓦片坐标（tileX， tileY）:</li>
 </ul>
-<span>$tileX=\lfloor\frac{lng + 180}{360}\times{2^{Level}}\rfloor$</span><!-- Has MathJax -->
-<span>$tileY=\lfloor{(\frac{1}{2}-\frac{\ln(\tan(lat\times\pi/180)+\sec(lat\times\pi/180))}{2\times&pi;}})\times{2^{Level}}\rfloor$</span><!-- Has MathJax -->
+<p>$$tileX=\lfloor\frac{lng + 180}{360}\times{2^{Level}}\rfloor$$<br>$$tileY=\lfloor{(\frac{1}{2}-\frac{\ln(\tan(lat\times\pi/180)+\sec(lat\times\pi/180))}{2\timesπ}})\times{2^{Level}}\rfloor$$</p>
 <ul>
 <li>经纬度坐标（lng, lat）转像素坐标（pixelX, pixelY）</li>
 </ul>
@@ -823,7 +822,7 @@
   });
 </script>
 
-<script type="text/javascript" src="">
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 <!-- End: Injected MathJax -->
 <!-- hexo-inject:end -->
